@@ -1,3 +1,5 @@
+import { useEffect, useState, useRef } from "react";
+
 const getWsUrl = () => {
   if (typeof process !== "undefined" && process.env.NEXT_PUBLIC_WS_URL) {
     return process.env.NEXT_PUBLIC_WS_URL;
